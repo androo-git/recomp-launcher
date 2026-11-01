@@ -1230,7 +1230,7 @@ struct RecompLauncherCSettings {
     int  skip_launcher;     // bool: boot straight to the game next time
     int  msu1_enabled;      // bool
     char msu1_dir[512];
-    int  pad_mode[RECOMP_LAUNCHER_MAX_PLAYERS];    // per player: 0=Hybrid, 1=Analog(DualShock), 2=D-Pad(digital)
+    int  pad_mode[RECOMP_LAUNCHER_MAX_PLAYERS];    // per player: 0=Hybrid, 1=Analog(DualShock), 2=D-Pad(digital), 3=NeGcon
     int  aspect_index;      // 0 = 4:3, 1 = 16:9, 2 = 21:9
 
     // ---- deeper PSX-style settings (capability-gated; see RecompLauncherCGameInfo

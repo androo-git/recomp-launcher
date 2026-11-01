@@ -34,7 +34,7 @@ struct ControllerProfile {
     const char* id;          // "dualshock", "negcon", "jogcon"
     const char* label;       // "DualShock (analog)"
     const char* detail;      // one line under the label
-    int pad_mode;            // Settings.pad_mode value it implies (1 analog, 2 digital)
+    int pad_mode;            // Settings.pad_mode value it implies (1 analog, 2 digital, 3 NeGcon)
     FeatureRef feature;      // feature that must be on for it; {nullptr,nullptr} = none
 };
 

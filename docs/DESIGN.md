@@ -427,8 +427,12 @@ previous skin and shows the line in the footer.
   host relay, version selection, mod resources, the toolchain repair flow, the PGO/FMV-timing buttons and
   memory-card inspection. The ABI fields are all present, so these are
   UI-only additions.
-- **NeGcon:** there is no ABI field for a NeGcon pad type. The profile maps
-  to analog `pad_mode`. A real NeGcon device type needs a psxrecomp setting.
+- **NeGcon:** `Settings.pad_mode` 3 presents the NeGcon (psxrecomp
+  `PAD_MODE_NEGCON`): the pad answers the NeGcon SIO protocol (ID 0x23,
+  twist + analog I/II/L), so the game shows its own NeGcon screens. The
+  profile maps to that value; a device that names itself a NeGcon is
+  auto-detected without the profile (psxrecomp
+  `psx_controller_name_is_negcon`).
 - **Bitmap fonts:** BMFont text format only, single page.
 - **Sounds:** WAV only.
 - **Skin text roles:** only nav, headings, buttons, labels and the hero use

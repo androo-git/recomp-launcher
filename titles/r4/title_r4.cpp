@@ -16,7 +16,7 @@ const ControllerProfile kControllers[] = {
     {"dualshock", "DualShock", "Analog sticks and triggers. Best with a modern gamepad.", 1,
      {nullptr, nullptr}},
     {"digital", "Digital pad", "The original PlayStation pad, no sticks.", 2, {nullptr, nullptr}},
-    {"negcon", "NeGcon", "Twist steering and analog pedals, mapped from a gamepad.", 1,
+    {"negcon", "NeGcon", "Twist steering and analog pedals, mapped from a gamepad.", 3,
      {nullptr, nullptr}},
     {"jogcon", "JogCon", "Namco's force-feedback dial. Uses the R4 JogCon input mod.", 1,
      {"r4.compat.jogcon-input", "jogcon-input"}},
